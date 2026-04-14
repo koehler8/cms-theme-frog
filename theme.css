@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap');
+
+:root[data-site-theme="frog"] {
+  --frog-leaf: #2f9b63;
+  --frog-lily: #84f0b3;
+  --frog-fern: #17623f;
+  --frog-shadow: rgba(7, 33, 20, 0.55);
+  --frog-water: #1a3c34;
+  --frog-sky: #0c2724;
+  --frog-sun: #f7d77d;
+
+  --brand-bg-900: #061c15;
+  --brand-bg-800: #0b2b1f;
+  --brand-bg-700: #12382a;
+  --brand-fg-100: #eaffe8;
+  --brand-fg-200: #c4e9ce;
+  --brand-fg-300: #93c9a9;
+
+  --brand-radius-sm: 8px;
+  --brand-radius-md: 16px;
+  --brand-radius-lg: 28px;
+
+  --brand-gradient-ignition: linear-gradient(135deg, #57f287 0%, #2f9b63 45%, #11b4a9 100%);
+  --brand-shadow-glow: 0 16px 40px rgba(47, 155, 99, 0.35);
+  --brand-shadow-glow-strong: 0 22px 48px rgba(17, 180, 169, 0.38);
+  --brand-chart-track: rgba(10, 41, 31, 0.7);
+  --brand-chart-center-text: var(--brand-fg-100);
+  --brand-cta-text: #042312;
+
+  --brand-accent-electric: #2f9b63;
+  --brand-accent-electric-soft: rgba(47, 155, 99, 0.18);
+  --brand-accent-warm: #f1832f;
+
+  --brand-card-soft: rgba(10, 46, 33, 0.95);
+  --brand-card-border: rgba(132, 240, 179, 0.45);
+  --brand-card-shadow: 0 20px 48px rgba(6, 28, 21, 0.48);
+
+  --brand-primary-cta-gradient: var(--brand-gradient-ignition);
+  --brand-primary-cta-text: var(--brand-cta-text);
+  --brand-primary-cta-shadow: var(--brand-shadow-glow);
+  --brand-primary-cta-hover-shadow: var(--brand-shadow-glow-strong);
+  --brand-primary-cta-hover-translate: translateY(-3px);
+
+  --brand-surface-card-bg: rgba(13, 46, 33, 0.92);
+  --brand-surface-card-border: rgba(132, 240, 179, 0.26);
+  --brand-surface-card-shadow: 0 24px 60px rgba(6, 23, 17, 0.4);
+  --brand-surface-helper-bg: rgba(47, 155, 99, 0.18);
+  --brand-surface-helper-hover-bg: rgba(132, 240, 179, 0.32);
+  --brand-card-radius: 28px;
+  --brand-button-radius: 999px;
+
+  --brand-icon-badge-bg: rgba(132, 240, 179, 0.28);
+  --brand-icon-badge-color: #0c753f;
+
+  --brand-pill-gradient: linear-gradient(135deg, #57f287 0%, #2f9b63 60%, #11b4a9 100%);
+  --brand-pill-alt-gradient: linear-gradient(135deg, #24c389 0%, #19a4a5 100%);
+  --brand-pill-contrast: #042312;
+
+  --brand-border-highlight: rgba(132, 240, 179, 0.45);
+  --brand-border-glow: rgba(47, 155, 99, 0.5);
+
+  --brand-status-success: #78f7b2;
+  --brand-status-error: #f1845a;
+  --brand-status-error-soft: rgba(241, 132, 90, 0.22);
+
+  --brand-input-bg: rgba(12, 55, 38, 0.65);
+  --brand-input-border: rgba(132, 240, 179, 0.25);
+  --brand-input-border-active: rgba(132, 240, 179, 0.6);
+  --brand-input-text: var(--brand-fg-100);
+  --brand-input-placeholder: rgba(147, 201, 169, 0.55);
+  --brand-focus-ring: 0 0 0 2px rgba(132, 240, 179, 0.45);
+  --brand-focus-glow: 0 0 24px rgba(47, 155, 99, 0.45);
+
+  --brand-modal-backdrop: rgba(5, 20, 14, 0.85);
+  --brand-modal-surface: rgba(12, 46, 33, 0.96);
+  --brand-modal-border: rgba(132, 240, 179, 0.28);
+  --brand-modal-shadow: 0 28px 68px rgba(6, 23, 17, 0.55);
+  --brand-modal-radius: 28px;
+
+  --brand-countdown-digit: #84f0b3;
+  --brand-countdown-label: rgba(202, 242, 216, 0.78);
+}
+
+[data-site-theme="frog"] body {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(132, 240, 179, 0.12), transparent 55%),
+    radial-gradient(circle at 80% 10%, rgba(17, 180, 169, 0.1), transparent 60%),
+    linear-gradient(160deg, #03150f 0%, #0b2b1f 100%);
+  color: var(--brand-fg-100);
+}
+
+[data-site-theme="frog"] a {
+  color: var(--brand-accent-electric, #2f9b63);
+}
+
+[data-site-theme="frog"] a:hover,
+[data-site-theme="frog"] a:focus {
+  color: var(--brand-accent-warm);
+}
+
+[data-site-theme="frog"] .brand-card {
+  backdrop-filter: blur(12px);
+}
+
+[data-site-theme="frog"] .status-card__line--headline {
+  background: linear-gradient(115deg, rgba(132, 240, 179, 0.18), rgba(17, 180, 169, 0.22));
+  color: var(--brand-fg-100);
+  box-shadow:
+    0 14px 30px rgba(4, 20, 16, 0.45),
+    inset 0 1px 0 rgba(132, 240, 179, 0.24);
+}
+
+[data-site-theme="frog"] .status-metric {
+  background: rgba(8, 33, 24, 0.85);
+  border-color: rgba(132, 240, 179, 0.22);
+  box-shadow:
+    0 20px 48px rgba(4, 18, 13, 0.6),
+    inset 0 1px 0 rgba(132, 240, 179, 0.1);
+}
+
+[data-site-theme="frog"] .status-metric--personal {
+  background: linear-gradient(135deg, rgba(132, 240, 179, 0.18), rgba(17, 180, 169, 0.22));
+  border-color: rgba(132, 240, 179, 0.45);
+  box-shadow:
+    0 28px 60px rgba(4, 18, 13, 0.55),
+    inset 0 0 0 1px rgba(132, 240, 179, 0.35);
+}
+
+[data-site-theme="frog"] .status-card__price-value {
+  color: #84f0b3;
+  text-shadow:
+    0 0 22px rgba(132, 240, 179, 0.4),
+    0 0 48px rgba(17, 180, 169, 0.35);
+}
+
+[data-site-theme="frog"] .countdown {
+  background: rgba(8, 35, 25, 0.8);
+  border-color: rgba(132, 240, 179, 0.26);
+  box-shadow: 0 20px 46px rgba(4, 18, 13, 0.5);
+}
+
+[data-site-theme="frog"] .countdown__value {
+  color: #84f0b3;
+  text-shadow:
+    0 0 16px rgba(132, 240, 179, 0.38),
+    0 0 32px rgba(17, 180, 169, 0.32);
+}
+
+[data-site-theme="frog"] .primary-button {
+  background: var(--brand-gradient-ignition);
+  color: var(--brand-cta-text);
+  border: none;
+  box-shadow:
+    0 18px 48px rgba(17, 180, 169, 0.35),
+    0 0 0 1px rgba(132, 240, 179, 0.18);
+}
+
+[data-site-theme="frog"] .primary-button:hover,
+[data-site-theme="frog"] .primary-button:focus-visible {
+  box-shadow:
+    0 24px 60px rgba(17, 180, 169, 0.45),
+    0 0 0 1px rgba(132, 240, 179, 0.3);
+  transform: var(--brand-primary-cta-hover-translate, translateY(-3px));
+}
+
+[data-site-theme="frog"] .header-wallet__button {
+  background: linear-gradient(135deg, rgba(132, 240, 179, 0.95), rgba(47, 155, 99, 0.95));
+  border: none;
+  color: #042312;
+  box-shadow:
+    0 18px 42px rgba(4, 24, 16, 0.45),
+    0 0 0 1px rgba(132, 240, 179, 0.25);
+}
+
+[data-site-theme="frog"] .header-wallet__button:hover,
+[data-site-theme="frog"] .header-wallet__button:focus-visible {
+  box-shadow:
+    0 24px 58px rgba(4, 24, 16, 0.55),
+    0 0 0 1px rgba(132, 240, 179, 0.4);
+}
+
+
+[data-site-theme="frog"] .stake-card__button--primary {
+  border: none;
+  background: var(--brand-gradient-ignition);
+  color: var(--brand-cta-text);
+  box-shadow:
+    0 20px 48px rgba(4, 18, 13, 0.55),
+    0 0 0 1px rgba(132, 240, 179, 0.25);
+}
+
+[data-site-theme="frog"] .stake-card__button--primary:hover,
+[data-site-theme="frog"] .stake-card__button--primary:focus {
+  box-shadow:
+    0 26px 58px rgba(4, 18, 13, 0.6),
+    0 0 0 1px rgba(132, 240, 179, 0.35);
+  transform: translateY(-2px);
+}
+
+
+[data-site-theme="frog"] .form-alert {
+  background: rgba(9, 40, 28, 0.88);
+  border-left-color: #84f0b3;
+  color: var(--brand-fg-100);
+}
+
+[data-site-theme="frog"] .form-alert--error {
+  border-left-color: #f1845a;
+  background: rgba(50, 16, 9, 0.82);
+}
+
+[data-site-theme="frog"] .form-alert--success {
+  border-left-color: #78f7b2;
+  background: rgba(9, 40, 28, 0.82);
+}
+
+[data-site-theme="frog"] .status-countdown--loading {
+  background: rgba(8, 35, 25, 0.88);
+  border-color: rgba(132, 240, 179, 0.26);
+  box-shadow:
+    0 18px 48px rgba(4, 18, 13, 0.55),
+    inset 0 1px 0 rgba(132, 240, 179, 0.1);
+}
+
+
+[data-site-theme="frog"] .footer {
+  background: rgba(5, 20, 14, 0.9);
+  color: var(--brand-fg-200);
+}
+[data-site-theme="frog"] .about-section {
+  position: relative;
+  overflow: hidden;
+}
+
+[data-site-theme="frog"] .about-section .about-heading {
+  color: rgba(234, 255, 232, 0.98) !important;
+}
+
+[data-site-theme="frog"] .about-section .about-copy {
+  color: rgba(198, 242, 210, 0.92) !important;
+}
+
+[data-site-theme="frog"] .about-section .about-text-overlay {
+  background: rgba(6, 28, 21, 0.88);
+  padding: 22px 24px;
+  border-radius: 24px;
+  box-shadow:
+    0 18px 44px rgba(4, 18, 13, 0.6),
+    inset 0 1px 0 rgba(132, 240, 179, 0.15);
+}
+
+[data-site-theme="frog"] .about-section .about-cta,
+[data-site-theme="frog"] .about-section .primary-button {
+  background: var(--brand-gradient-ignition);
+  color: var(--brand-cta-text);
+  box-shadow:
+    0 16px 40px rgba(4, 24, 16, 0.45),
+    0 0 0 1px rgba(132, 240, 179, 0.2);
+}
+
+[data-site-theme="frog"] .about-section .about-cta:hover,
+[data-site-theme="frog"] .about-section .about-cta:focus-visible,
+[data-site-theme="frog"] .about-section .primary-button:hover,
+[data-site-theme="frog"] .about-section .primary-button:focus-visible {
+  box-shadow:
+    0 22px 48px rgba(4, 24, 16, 0.55),
+    0 0 0 1px rgba(132, 240, 179, 0.32);
+}
+
+[data-site-theme="frog"] .about-section .responsive-picture-shell {
+  box-shadow: 0 20px 48px rgba(4, 20, 15, 0.55);
+  border-radius: 28px;
+}
