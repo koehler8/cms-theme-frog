@@ -1,7 +1,7 @@
 # @koehler8/cms-theme-frog — Lush Canopy
 
 - **Slug**: `frog`
-- **Version**: 1.0.0
+- **Version**: 1.0.1
 - **Author**: koehler8
 
 ## Install
@@ -34,3 +34,11 @@ Set `site.theme` to `"frog"` in your site config. If external font calls are res
 ## Compatibility Notes
 - Works best with dark hero art or illustration; avoid pairing with stark white imagery unless you add per-section overlays.
 - Theme CSS customizes legacy components (status metrics, stake buttons, About block) via `[data-site-theme="frog"]` selectors—keep bespoke overrides in this folder to avoid cross-site bleed.
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+
+## License
+
+[MIT](./LICENSE)
