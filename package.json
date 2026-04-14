@@ -1,7 +1,7 @@
 {
   "name": "@koehler8/cms-theme-frog",
   "version": "1.0.1",
-  "description": "Lush Canopy theme for @koehler8/cms — green botanical palette with dark background",
+  "description": "Lush Canopy theme for Vertex CMS — green botanical palette with dark background",
   "author": "koehler8",
   "license": "MIT",
   "keywords": ["cms", "theme", "koehler8", "frog", "dark-theme"],
